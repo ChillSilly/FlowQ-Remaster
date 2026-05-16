@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter);
+  --font-mono: var(--font-mono);
+
+  --color-background: #020408;
+  --color-foreground: #cbd5e1;
+  
+  --color-card: rgba(255, 255, 255, 0.05);
+  --color-card-foreground: #ffffff;
+
+  --color-primary: #22d3ee;
+  --color-primary-foreground: #000000;
+
+  --color-secondary: #f43f5e;
+  --color-secondary-foreground: #ffffff;
+
+  --color-accent: rgba(34, 211, 238, 0.1);
+  --color-accent-foreground: #22d3ee;
+  
+  --color-muted: rgba(255, 255, 255, 0.05);
+  --color-muted-foreground: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary;
+  }
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-cyan { text-shadow: 0 0 10px rgba(34, 211, 238, 0.5); }
+.glow-border { box-shadow: 0 0 15px rgba(34, 211, 238, 0.1); border: 1px solid rgba(34, 211, 238, 0.2); }
+.gamma-gradient { background: linear-gradient(90deg, rgba(34, 211, 238, 0.1) 0%, rgba(244, 63, 94, 0.1) 100%); }
+.regime-bg-pos { background: radial-gradient(circle at center, rgba(34, 211, 238, 0.15) 0%, transparent 70%); }
+.regime-bg-neg { background: radial-gradient(circle at center, rgba(244, 63, 94, 0.15) 0%, transparent 70%); }

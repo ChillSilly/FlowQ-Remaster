@@ -1,0 +1,8 @@
+{
+  "name": "FloQ: Gamma Flow Insights",
+  "description": "5 Impactful Takeaways from Institutional Gamma Flow",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
